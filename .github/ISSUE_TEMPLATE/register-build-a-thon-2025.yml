@@ -1,0 +1,89 @@
+name: Register for Build-a-thon 2025
+description: Register for Build-a-thon 2025
+title: "[Register for Build-a-thon 2025]: "
+labels: ["Register for Build-a-thon 2025"]
+assignees:
+  - vrra
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to register for Build-a-thon 2025!
+  - type: input
+    id: team-name
+    attributes:
+      label: Team name
+      description: Enter a catchy name for your team
+      placeholder: ex. Bob-the-builder
+    validations:
+      required: true
+  - type: dropdown
+    id: Total-number-of-team-members-including-yourself
+    attributes:
+      label: Total number of team members
+      multiple: false
+      options:
+        - 1
+        - 2
+        - 3
+        - 4 
+    validations:
+      required: true
+  - type: input
+    id: team-member-1
+    attributes:
+      label: Contact Details of team member 1
+      description: Enter email id of team member 1
+      placeholder: ex. email@example.com
+    validations:
+      required: true
+  - type: input
+    id: team-member-2
+    attributes:
+      label: Contact Details of team member 2
+      description: Enter email id of team member 2
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: input
+    id: team-member-3
+    attributes:
+      label: Contact Details of team member 3
+      description: Enter email id of team member 3
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: input
+    id: team-member-4
+    attributes:
+      label: Contact Details of team member 4
+      description: Enter email id of team member 4
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: input
+    id: mentor
+    attributes:
+      label: Contact Details of mentor
+      description: Enter email id of mentor
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: tell-us-about-yourself
+    attributes:
+      label: tell us more about yourself
+      description: names, countries, affiliations, etc
+      placeholder: names of team members, affiliations, countries...
+      value: "name-1, designation-1, affiliation-1, country-1 \n
+      name-2, designation-2, affiliation-2, country-2"
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: Participants will treat each other, other teams and participants with respect, professionalism, fairness, and sensitivity to our many differences and strengths. All discussions would be courteous,  participants should not accept or engage in abusive behavior in any form, whether it is verbal, physical, sexual, or implied. Judges' decisions would be final. We value giving credit when credit is due. Participants shall only take credit for their own original work and where required, participants would add citations and give credits to others, plagiarism would result in immediate disqualification from the challenge. If participants are allocated ITU resources (e.g. GPUs), they agree to use it solely for the purposes of the challenge. Violating this condition will result in immediate dismissal from the challenge.
+      options:
+        - label: I agree to follow the Challenge Code of Conduct
+          required: true
